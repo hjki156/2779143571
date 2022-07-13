@@ -1,0 +1,119 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+img {
+	width: 100%
+}
+hr {
+	position: relative;
+	display: block;
+	height: 0;
+	margin: 1.5em;
+	margin-left: 95%;
+	margin-right: calc(10% - 1em);
+	border-style: dotted none none none ;
+	border-color: #ADADAD;
+	border-width: 1.2px;
+	overflow: visible;
+	transition: margin .618s;
+}
+hr::after {
+	display: block;
+	text-align: center;
+	content: "✎";
+	color: #ADADAD;
+	position: absolute;
+	top: calc(-1em - 1px);
+	left: -1em;
+}
+.headerimg {
+	opacity: 1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+.info {
+	padding: 17.5vw 1em;
+	box-shadow: 0 0 1em #888;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 25vh;
+	bottom: 0;
+	background: #FFF;
+	border-radius: 10vw 10vw 0 0;
+}
+.avatar {
+	opacity: 0;
+	transition: opacity .618s;
+	border-radius: 50%;
+	width: 35vw;
+	left: 0;
+	right: 0;
+	top: -17.5vw;
+	margin: 0 auto;
+	box-shadow: 0 0 2px #000;
+	position: absolute;
+}
+.avatarinfo {
+	display: block;
+	text-align: center;
+}
+.avatarinfo .name {
+	font-size: 1.5em;
+}
+.avatarinfo .qq {
+	color: #666;
+	font-size: .6em;
+}
+.up {
+	position: absolute;
+	font-size: .8em;
+	right: 17.5vw;
+	top: 0;
+}
+.up img {
+	position: absolute;
+	top: -1.5em;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 1.5em;
+}
+.tags {
+	line-height: 2.5em
+}
+.tags > p {
+	background: #EEE;
+	padding: .5em 1em;
+	border-radius: 1em;
+	white-space: nowrap;
+	display: inline;
+	box-shadow: inset 0 0 5px #DDD;
+}
+.female:before {
+	content: '♀';
+	color: #FF0079;
+	text-shadow: 0 0 1px;
+}
+.male:before {
+	content: '♂';
+}
+.qzone {
+	position: relative;
+}
+.qzone p {
+	
+}
+.qzone .qcontent {
+	height: 25vw;
+	overflow: hidden;
+}
+.qzone .qcontent img{
+	float: left;
+	border-radius: 2px;
+	margin: 1%;
+	width: 21%;
+}
